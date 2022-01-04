@@ -42,8 +42,6 @@ My Model(data) lies within my View(Bay), as oppose to along side it in Main.
  - I think the reason I initially chose the route I chose is simply because it 
    makes my main() function more compact and simplified... hiding the data 
    structure from whoever writes the main() function... 
- - in following assignments I will follow class organizing guidlines more 
-   closely
 
 A graphic of my memory flow:
 
@@ -58,33 +56,3 @@ Controls <----- Main -|
             V            
           Data   
 
--------------------------------------------------------------------------------
-PANNING AND ZOOMING:
-
-NOT IMPLEMENTED
--- Extenuating circumstance made me miss Wednesday's class... 
--- I heavily researched the topic (including watched some British 
-   guy do it at least 10 times), but my design errors in earlier
-   weeks made it too difficult/annoying to implement in a timely 
-   manner... I wish I could have done it but at least that function
-   was not part of my own initial desires for the program (I thought
-   we would move on after week 5... and then after week6).
-
-A thought:
--- I have had a great experience in this class so far... I am not used 
-   to being able to have any semblance of creative freedom in my programming
-  and it's reminded me of why I love it so much.
-
--- Being able to continuously work on a project has also been a welcomed change
-   but its come with its drawbacks: namely, I made a big design error week 2, 
-   and its become an ever-growing boil on my neck since. 
--------------------------------------------------------------------------------
-
-So, are there any updates!?
-
-Yes, but only minor bug fixes and cleanup. 
-
-Mouse picking is actually accurate now 
-(I had forgottten to subtract the offset of my canvas)
-
-Pirate spawns in Waterfront Berkeley... my home.
