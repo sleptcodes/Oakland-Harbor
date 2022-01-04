@@ -1,0 +1,90 @@
+Mateo Hadeshian
+Robert Jacob
+OOP
+31 October 2020
+
+Compile: javac Main.java
+Run: java Main.java
+
+////////////////////////////////////////////////////////////////////////////
+
+FOR PLAYERS:
+
+Who knew the shipping business was so ruthless!? 
+
+With this simulation, one can spawn in as many boats as they like. Each 
+boat spawned is tasked with dropping off its cargo at a dock. A boat will 
+auto-locate the dock with the least boats going to it and set that dock as 
+its destination. Boats can come from three spawns: the Pacific Ocean, 
+Valleijo, or San Jose.
+
+Woah but it ain't that easy. A pirate can spawn at the user's discretion.
+The pirate will auto-locate the nearest boat with cargo. If the pirate 
+catches the boat, the cargo is stolen and the boat sunken.
+
+CHALLENGE: Try to spawn boats in a way such that, over time more cargo is 
+           dropped off than stolen.
+           (hint, exploit the pirate's ai... a loss is okay as long as
+           victories are more frequent)
+
+MOUSE PICKING: If the user clicks on a boat, it will turn into a clown!
+This function is purely cosmetic.
+
+////////////////////////////////////////////////////////////////////////////
+
+LIMITATIONS:
+
+My Model(data) lies within my View(Bay), as oppose to along side it in Main. 
+ - There is no appaernt issue with this in functionality, but it limits the 
+   modularity of my code... I could always change it, but I would need to 
+   update how my information is passed along (I would need to initialize 
+   data prior to bay, and include data in the constructor for bay)... 
+ - I think the reason I initially chose the route I chose is simply because it 
+   makes my main() function more compact and simplified... hiding the data 
+   structure from whoever writes the main() function... 
+ - in following assignments I will follow class organizing guidlines more 
+   closely
+
+A graphic of my memory flow:
+
+Controls <----- Main -|   
+    \                 |  
+     \               /  
+      -\            /
+        \          /   
+         -> Bay <--        
+            ^            
+            |            
+            V            
+          Data   
+
+-------------------------------------------------------------------------------
+PANNING AND ZOOMING:
+
+NOT IMPLEMENTED
+-- Extenuating circumstance made me miss Wednesday's class... 
+-- I heavily researched the topic (including watched some British 
+   guy do it at least 10 times), but my design errors in earlier
+   weeks made it too difficult/annoying to implement in a timely 
+   manner... I wish I could have done it but at least that function
+   was not part of my own initial desires for the program (I thought
+   we would move on after week 5... and then after week6).
+
+A thought:
+-- I have had a great experience in this class so far... I am not used 
+   to being able to have any semblance of creative freedom in my programming
+  and it's reminded me of why I love it so much.
+
+-- Being able to continuously work on a project has also been a welcomed change
+   but its come with its drawbacks: namely, I made a big design error week 2, 
+   and its become an ever-growing boil on my neck since. 
+-------------------------------------------------------------------------------
+
+So, are there any updates!?
+
+Yes, but only minor bug fixes and cleanup. 
+
+Mouse picking is actually accurate now 
+(I had forgottten to subtract the offset of my canvas)
+
+Pirate spawns in Waterfront Berkeley... my home.
